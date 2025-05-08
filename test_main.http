@@ -1,0 +1,71 @@
+### Get all books
+GET http://127.0.0.1:8000/mylib/books/
+Accept: application/json
+
+###
+
+### Create a new publisher
+POST http://127.0.0.1:8000/mylib/publishers/
+Content-Type: application/json
+
+{
+  "name": "Penguin Books"
+}
+
+###
+
+### Create new authors
+POST http://127.0.0.1:8000/mylib/authors/
+Content-Type: application/json
+
+{
+  "name": "George Orwell"
+}
+
+###
+
+POST http://127.0.0.1:8000/mylib/authors/
+Content-Type: application/json
+
+{
+  "name": "Aldous Huxley"
+}
+
+###
+
+### Create a new book
+POST http://127.0.0.1:8000/mylib/books/
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "publisher_id": 1,
+  "author_ids": [1]
+}
+
+###
+
+### Update book title
+PATCH http://127.0.0.1:8000/mylib/books/1
+Content-Type: application/json
+
+{
+  "title": "Nineteen Eighty-Four"
+}
+
+###
+
+### Delete a publisher
+DELETE http://127.0.0.1:8000/mylib/publishers/1
+
+###
+
+### Get all authors
+GET http://127.0.0.1:8000/mylib/authors/
+Accept: application/json
+
+###
+
+### Get all publishers
+GET http://127.0.0.1:8000/mylib/publishers/
+Accept: application/json

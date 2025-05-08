@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# SQLite database
+*.sqlite3
+*.db
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs
+*.log
+
+# Python environment
+*.env
+.env.*
+
+# MacOS files
+.DS_Store
+
+# Uvicorn reload artifacts
+*.pid
