@@ -17,6 +17,22 @@ A simple FastAPI application demonstrating:
 - SQLite (default) or modify for another DB
 - Uvicorn with WebSocket support
 
+
+How to run it?
+```
+git clone https://github.com/yaroslavtsybulskyi/my_books.git
+cd my_books
+```
+Create and activate a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate 
+```
+On Windows use 
+```
+venv\Scripts\activate
+```
+Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
